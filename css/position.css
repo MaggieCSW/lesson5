@@ -1,0 +1,270 @@
+/* variables */
+:root {
+    --prim: #044;
+    --sec: darkgoldenrod;
+    --tert: rgb(2, 168, 168);
+    --font: 'Raleway', sans-serif;
+}
+
+* { box-sizing: border-box}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: var(--font);
+    background-color: var(--tert);
+}
+
+.inner {
+    margin: 0 auto;
+    width: 90%;
+    /* border: 2px solid black; */
+}
+
+.main {
+    padding: 50px 0;
+    margin-top: 100px;
+}
+
+.section {
+    padding: 20px 0;
+    /* border: 1px solid #833; */
+}
+
+/* header */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 10px 0;
+    width: 100%;
+    height: 120px;
+    background-color: var(--prim);
+}
+
+.header .inner {
+    position: relative;
+    height: 80px;
+}
+
+h1, .top-nav {
+    position: absolute;
+    width: 50%;
+    /* border: 1px solid white; */
+}
+
+h1 {
+    margin: 0;
+    font-size: 48px;
+    /* text-shadow: 2px 2px 2px #333; */
+    text-transform: capitalize;
+}
+
+.logo {
+    color: var(--sec);
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #333;
+}
+
+.top-nav {
+    top: 40px;
+    right: 0;
+}
+
+.nav-list {
+    margin: 0;
+    padding-left: 0;
+    text-align: right;
+    list-style-type: none;
+}
+
+.nav-list li {
+    display: inline;
+    padding: 0 12px;
+    text-transform: uppercase;
+    /* border-right: 1px solid var(--tert); */
+}
+
+.nav-list li:last-child {
+    padding-right: 0;
+    /* border: none; */
+}
+
+.nav-list a {
+    color: var(--tert);
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #333;
+}
+
+/* home */
+
+.home-h2 {
+    margin: 0;
+    color: var(--prim);
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.section1-content-box {
+    position: relative;
+    padding: 10px 0;
+    width: 100%;
+    height: 225px;
+    /* border: 1px solid white; */
+}
+
+.section1-content {
+    position: absolute;
+    padding: 5px;
+    width: 33.33%;
+    /* border: 1px solid white; */
+
+}
+
+.section1-content:nth-child(2) {
+    left: 33.33%
+}
+
+.section1-content:last-child {
+    right: 0;
+}
+
+.section1-content p {
+    margin: 0;
+    font-weight: 200;
+    line-height: 2;
+}
+
+#figureSection {
+    background-color: rgb(113, 227, 217);
+}
+
+.dat-figure {
+    position: relative;
+    height: 720px;
+    /* border: 2px solid black; */
+}
+
+.dat-figure img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dat-figure figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--sec);
+    font-style: italic;
+    font-weight: 200;
+}
+
+.section2-content-box {
+    position: relative;
+    width: 100%;
+    height: 275px;
+    /* border: 1px solid navy; */
+}
+
+.section2-content {
+    position: absolute;
+    padding: 5px;
+    width: 50%;
+    /* border: 1px solid red; */
+}
+
+.section2-content:last-child {
+    right: 0;
+}
+
+.section2-content h3 {
+    color: var(--sec);
+    font-size: 26px;
+    text-transform: capitalize;
+}
+
+.section2-content p {
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+
+/* --------------------about----------------------- */
+
+.about-h2, .contact-h2 {
+    margin: 0;
+    color: var(--sec);
+    font-size: 64px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.about-section .inner {
+    position: relative;
+    height: 400px;
+}
+
+.about-text {
+    /* position: absolute; */
+    margin: 0;
+    width: 50%;
+    /* border: 2px solid lime; */
+
+}
+
+.about-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: auto;
+}
+
+/* ---------------------------------contact------------------------------------ */
+
+#mainContact {
+    height: 80vh;
+
+}
+
+#mainContact .inner {
+    position: relative;
+    height: 400px;
+    /* border: 2px solid pink; */
+}
+
+.contact-text {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.contact-list {
+    position: absolute;
+    left: 33.33%;
+    padding-left: 0;
+    width: 33.33%;
+    list-style-type: none;
+    /* border: 2px solid var(--prim); */
+}
+
+.contact-list li {
+    padding: 5px 2px;
+    border: 1px solid var(--prim);
+}
+
+.contact-list a {
+    color: var(--sec);
+    text-decoration: none;
+}
+/* footer */
+
+.colophon {
+    color: var(--prim);
+    text-align: center;
+}

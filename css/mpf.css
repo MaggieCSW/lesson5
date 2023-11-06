@@ -1,0 +1,245 @@
+/* variables */
+:root {
+    --prim: #044;
+    --sec: darkgoldenrod;
+    --tert: rgb(2, 168, 168);
+    --font: 'Raleway', sans-serif;
+}
+
+* { box-sizing: border-box}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: var(--font);
+    background-color: var(--tert);
+}
+
+/* delete borders when done */
+
+/* .main, .border {
+    border: 2px solid black;
+} */
+
+/* .section {
+    border: 2px solid yellow;
+} */
+
+.inner {
+    margin: 0 auto;
+    width: 90%;
+    /* border: 2px solid blue; */
+}
+
+div {
+    /* border: 1px solid red; */
+}
+
+/* header */
+
+.header {
+    padding: 10px 0;
+    width: 100%;
+    background-color: var(--prim);   
+}
+
+h1, .top-nav {
+    width: 50%;
+    float: left;
+    /* border: 1px solid whitesmoke; */
+}
+
+h1 {
+    margin-top: 60px;
+    margin-bottom: 0;
+    font-size: 3.5em;
+    text-transform: capitalize;
+}
+
+.logo {
+    color: var(--sec);
+    text-shadow: 2px 2px 2px #333;
+    text-decoration: none;
+}
+
+.top-nav {
+    margin-top: 108px;
+
+}
+
+.nav-list {
+    margin: 0;
+    padding-left: 0;
+    text-align: right;
+    list-style-type: none;
+}
+
+.nav-list li {
+    display: inline;
+    padding: 0 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* border-right: 1px solid var(--tert); */
+}
+
+.nav-list li:last-child {
+    padding-right: 0;
+    /* border: none; */
+}
+
+.nav-list a {
+    color: var(--sec);
+    /* font-weight: 700; */
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #333;
+}
+
+.nav-list a:hover {
+    color: var(--tert);
+}
+
+/* main ??? is this where herb had the comment main??? */
+
+.section {
+    padding: 40px 0;
+}
+
+h2 {
+    color: var(--prim);
+    font-size: 40px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.section1-content {
+    padding: 10px 12px;
+    /* width: calc(100% / 3.33); */
+    width: 33.33%;
+    float: left;
+}
+
+.section1-content p {
+    font-weight: 200;
+    text-align: center;
+    line-height: 2;
+}
+
+#figureSection {
+    background-color: #333;
+}
+
+.dat-figure {
+    margin: 20px auto;
+    width: 660px;
+    /* border: 2px solid hotpink; */
+}
+
+.dat-figure img{
+    display: block;
+    margin: 0 auto;
+}
+
+.dat-figure figcaption {
+    color: var(--sec);
+    font-size: 12px;
+    font-style: italic;
+    opacity: .75;
+}
+
+
+.section2-content {
+    padding: 20px 12px;
+    width: 50%;
+    float: left;
+}
+
+.section2-content h3 {
+    color: var(--sec);
+    font-size: 40px;
+    /* padding: 20px; */
+    text-transform: uppercase;
+}
+
+.section2-content p {
+    font-weight: 200;
+    line-height: 2;
+}
+
+.colophon {
+    color: var(--prim);
+    text-align: center;
+}
+
+/* ------------------about page----------------- */
+
+#mainAbout {
+    padding: 50px 0;
+}
+
+/* .about-section, .about-section .inner .about-text {
+    border: 1px solid green;
+} */
+
+.about-h2, .contact-h2 {
+    font-size: 64px;
+}
+
+.about-section {
+    padding: 15px 0;
+}
+
+.about-text {
+    margin-top: 0;
+    margin-right: 60px;
+    margin-bottom: 0;
+    width: 60%;
+    font-size: 18px
+    line-height: 1.5;
+}
+
+.about-img {
+    display: block;
+    width: 200px;
+    height: auto;
+    float: right;
+}
+
+.about-text {
+    float: left;
+}
+
+/* -----------------contact page---------------- */
+
+#mainContact {
+    padding: 50px 0;
+    height: 75vh;
+    border: 1px solid brown;
+}
+
+.contact-text {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.contact-list {
+    margin: 0 auto;
+    padding-left: 0;
+    width: 33%;
+    list-style-type: none;
+    border: 1px solid black;
+}
+
+.contact-list li {
+    padding: 5px 0;
+    border: 1px solid var(--prim);
+}
+
+.contact-list a {
+    color: var(--sec);
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
